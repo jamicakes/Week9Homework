@@ -17,10 +17,10 @@ public class ProjectDao extends DaoBase {
   private static final String STEP_TABLE = "step"; 
 
   public Project insertProject(Project project) {
-// @formatter:off 
+    // @formatter:off 
     String sql = "" 
-        + "INSTERT INTO " + PROJECT_TABLE + " "
-        + "(project_name, estimated_hours, actual_hours, dificulty, notes)" 
+        + "INSERT INTO " + PROJECT_TABLE + " "
+        + "(project_name, estimated_hours, actual_hours, difficulty, notes)" 
         + "VALUES " 
         + "(?, ?, ?, ?, ?)";    
     //@formatter:on

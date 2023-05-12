@@ -5,7 +5,7 @@ import projects.entity.Project;
 
 public class ProjectService {
 
-  private static ProjectDao projectDao = new ProjectDao();
+  private ProjectDao projectDao = new ProjectDao();
   
   
   
@@ -13,7 +13,7 @@ public class ProjectService {
   public Project addProject(Project project) {
   return projectDao.insertProject(project); 
   
-  } // AddProject class - nn work
+  } // AddProject class 
 
   } // Project service class 
 
